@@ -19,15 +19,15 @@ Universo Santa Tecla
 [Youtube](https://www.youtube.com/watch?v=JBSbiilzg9U)
 ### vocabulary
 
-![Vocabulario](./docs/images/Practica_1.1_UML_Diagrama-de-clases_Conecta4.png)  
+![Vocabulario](./docs/images/Practica_1.1_UML_Diagrama-de-clases_Conecta4_Vocabulary.jpg)  
   
 ### initialState  
   
-![Estado_inicial]()  
+![Estado_inicial](./docs/images/Practica_1.1_UML_Diagrama-de-clases_Conecta4_initial.jpg)  
   
 ### finalState 
 
-![Estado_final]()  
+![Estado_final](./docs/images/Practica_1.1_UML_Diagrama-de-clases_Conecta4_final.jpg)  
   
 ### instructions  
   
