@@ -23,7 +23,7 @@ Universo Santa Tecla
   
 ### initialState  
   
-![Estado_inicial](./docs/images/Practica_1.1_UML_Diagrama-de-clases_Conecta4_initial.jpg)  
+![Estado_inicial](./docs/images/Practica_1.1_UML_Diagrama-de-clases_Conecta4_inicial.jpg)  
   
 ### finalState 
 
