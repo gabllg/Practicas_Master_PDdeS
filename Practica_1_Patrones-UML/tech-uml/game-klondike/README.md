@@ -18,15 +18,15 @@ Universo Santa Tecla
 [Youtube](https://www.youtube.com/watch?v=yjgQXcFVBQY)
 ### vocabulary
 
-![Vocabulario]()  
+![Vocabulario](./docs/images/Practica_1.1_UML_Diagrama-de-clases_Klondyke_Vocabulary.jpg)  
   
 ### initialState  
   
-![Estado_inicial]()  
+![Estado_inicial](./docs/images/Practica_1.1_UML_Diagrama-de-clases_Klondyke_Initial.jpg)  
   
 ### finalState 
 
-![Estado_final]()  
+![Estado_final](./docs/images/Practica_1.1_UML_Diagrama-de-clases_Klondyke_Final.jpg)  
   
 ### instructions  
   
