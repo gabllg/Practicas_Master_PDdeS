@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cuestionario</title>
+  <style>
+    body{width:80%;height:auto;padding:50px 10% 50px 10%;background-color:#d1d1d1;font-family: Arial, Helvetica, sans-serif;}
+    .entrada{width:100%;height:auto;}
+    .entrada h1{color:#d9d9d9;font-size:22px;background-color:#525252;padding:10px;border-radius: 10px;}
+    .entrada h2{color:#363636;font-size:18px}
+    .entrada h3{color:#525252;font-size:14px}
+    .entrada ul{color:#525252;list-style-type:decimal;}
+    .entrada li{color:#525252;font-size:14px}
+    .entrada a{color:#34577e;font-size:14px}
+    .pregunta{width:100%;height:auto;padding:10px 0px 10px 0px;}
+    .respuesta{width:100%;height:auto;color:#525252;padding:10px 0px 10px 0px;}
+    .correccion{width:100%;height:auto;color:#525252;padding:10px 0px 10px 0px;}
+  </style>
+</head>
+<body>
+<!-- _______________________________________________________________________ -->
+<!-- _____________________________EJERCICIO 1_______________________________ -->
+<!-- _______________________________________________________________________ -->
+  <section class="entrada">
+    <h1>Ejercicio 1</h1>
+    <div class="pregunta">
+      <h2>Dado el siguiente diagrama, escribe el correspondiente texto para la herramienta Imperative Grid</h2>
+      <img src="media/img_3Con_ejercicio_1.png" alt="" width="300px">
+    </div>
+    <div class="respuesta">
+      <h2>Respuesta</h2>
+      <h3>
+        <br>[
+        <br>DoWhile(
+        <br>[
+        <br>Shift("south"),
+        <br>],
+        <br>Not(
+        <br>Equals(
+        <br>GetDistanceEdge("north"),
+        <br>GetDistanceEdge("south")))),
+        <br>DoWhile(
+        <br>[
+        <br>Shift("east"),
+        <br>],
+        <br>Not(
+        <br>Equals(
+        <br>GetDistanceEdge("east"),
+        <br>GetDistanceEdge("west")))),
+        <br>Shift("west",3),
+        <br>Draw("east",5),
+        <br>]
+      </h3>
+    </div>
+    <div class="correccion">
+      <h2>Corrección</h2>
+      <h3>Escribe aquí la corrección</h3>
+    </div>
+  </section>
+<!-- _______________________________________________________________________ -->
+<!-- _____________________________EJERCICIO 2_______________________________ -->
+<!-- _______________________________________________________________________ -->
+  <section class="entrada">
+    <h1>Ejercicio 2</h1>
+    <div class="pregunta">
+      <h2>Escribe la expresión correspondiente a la salida "suma" del circuito sumador total de dos bits del apartado Algebra de Boole del tema Conocimiento.</h2>
+    </div>
+    <div class="respuesta">
+      <h2>Respuesta</h2>
+      <h3>Suma === ~A & B & Cin | A & ~B & Cin | A & B</h3>
+    </div>
+    <div class="correccion">
+      <h2>Corrección</h2>
+      <h3>Escribe aquí la corrección</h3>
+    </div>
+  </section>
+<!-- _______________________________________________________________________ -->
+<!-- _____________________________EJERCICIO 3_______________________________ -->
+<!-- _______________________________________________________________________ -->
+<section class="entrada">
+  <h1>Ejercicio 3</h1>
+  <div class="pregunta">
+    <h2>Propón un lenguaje de signos/símbolos, no hablado/escrito, que no sea el "semáforo" o el "policía de tráfico" y justifica tu respuesta.</h2>
+    
+  </div>
+  <div class="respuesta">
+    <h2>Respuesta</h2>
+    <h3>Comunicación de jugadas entre los compañeros de un equipo por medio de señas, evitando que el rival pueda comprender el mensaje:
+      <br>Consiste en una serie de señas ordenadas que especifican los movimientos y el orden de ejecución para cada jugador, por ejemplo en un saque de banda en rugby (touche).
+    </h3>
+  </div>
+  <div class="correccion">
+    <h2>Corrección</h2>
+    <h3>Escribe aquí la corrección</h3>
+  </div>
+</section>
+<!-- _______________________________________________________________________ -->
+<!-- _____________________________EJERCICIO 4_______________________________ -->
+<!-- _______________________________________________________________________ -->
+<section class="entrada">
+  <h1>Ejercicio 4</h1>
+  <div class="pregunta">
+    <h2>Describe el triangulo de Tartaglia de forma recursiva.</h2>
+  </div>
+  <div class="respuesta">
+    <h2>Respuesta</h2>
+    <h3>Pirámide formada por números en posiciones intercaladas, cuyo valor es la suma de los dos números superiores de los que desciende.</h3>
+  </div>
+  <div class="correccion">
+    <h2>Corrección</h2>
+    <h3>Escribe aquí la corrección</h3>
+  </div>
+</section>
+
+<!-- _______________________________________________________________________ -->
+<!-- _____________________________EJERCICIO 5_______________________________ -->
+<!-- _______________________________________________________________________ -->
+<section class="entrada">
+  <h1>Ejercicio 5</h1>
+  <div class="pregunta">
+    <h2>Critica el siguiente diagrama.</h2>
+    <img src="media/diagrama_clase.png" alt="" width="300px">
+  </div>
+  <div class="respuesta">
+    <h2>Respuesta</h2>
+    <ul>
+      <li>Reemplazaría "espectadores" por "alumnos".</li>
+      <li>Pondría la asociación entre "espectadores" y "MPDS" unidireccional: los espectadores ven (reciben el contenido de) el MPDS.</li>
+      <li>El MPDS contiene unidades, y unidades contienen prácticas, y las prácticas son pruebas y ejercicios.</li>
+      <li>Añadiría "Teoría" al contenido de las unidades.</li>
+      <li>Espectadores heredarían características de críticos y de artistas.</li>
+      <li>Los nombres se escriben en inglés, con la primera letra mayúscula, y en singular.</li>
+      <li>Asociaría a los alumnos con las prácticas, que son quienes las ejecutan.</li>
+      <li>Añadiría "Teacher", que imparte la teoría la práctica.</li>
+    </ul>
+    <img src="media/Respuesta_diagrama_alumnos.png" alt="" width="500px">
+  </div>
+  <div class="correccion">
+    <h2>Corrección</h2>
+    <h3>Escribe aquí la corrección</h3>
+  </div>
+</section>
+</body>
+</html>
