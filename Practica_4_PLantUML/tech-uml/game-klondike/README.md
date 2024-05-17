@@ -33,20 +33,20 @@ Class Order
 Class Free  
   
 Game *-down-> Surface  
-Surface *-down-> Column  
+Surface *-down-> "7" Column  
 Surface *-down-> Pile  
-Column *-down-> Card  
-Pile *-down-> Card  
-Card <|-down- Spade  
-Card <|-down- Diamond  
-Card <|-down- Heart  
-Card <|-down- Club  
+Column *-down-> "n=n+1=<7" Card  
+Pile *-down-> "3n" Card  
+Card <|-down- "13" Spade  
+Card <|-down- "13" Diamond  
+Card <|-down- "13" Heart  
+Card <|-down- "13" Club  
 Card -down-> Discovered  
 Covered -up-> Pile  
 Discovered -down-> Disorder  
 Disorder -up-> Covered  
 Discovered -down-> Order  
-Order -down-> Free  
+Order -down-> Free   
   
 @enduml  
   
