@@ -2,24 +2,24 @@
 Universo Santa Tecla - Master en Programación y Diseño Software
 [uSantaTecla@gmail.com](mailto:uSantaTecla@gmail.com)  
   
-
+  
 ## Ejercicio 1
 Expón un escenario donde un proceso se realice de todas las formas posibles combinando in/eficacia y in/eficiencia. Por ejemplo, comprar pan: trae pan o sustituto en poco tiempo y buen precio; trae sustituto pero a veces tarda años en volver o se gasta 100 veces más; ...
-
-### Respuesta
-
+  
+### Respuesta  
+  
 Servir comida en un restaurante:  
-Eficacia / Eficiencia
-1 - 1 La comida es de buena calidad / Tarda muy poco en servirlo
-1 - 0 La comida es de buena calidad / Tarda muchísimo en servirlo
-0 - 1 La comida es de mala calidad / Tarda muy poco en servirlo
-0 - 0 La comida es de mala calidad / Tarda muchísimo en servirlo
-
-
+Eficacia / Eficiencia  
+1 - 1 La comida es de buena calidad / Tarda muy poco en servirlo  
+1 - 0 La comida es de buena calidad / Tarda muchísimo en servirlo  
+0 - 1 La comida es de mala calidad / Tarda muy poco en servirlo  
+0 - 0 La comida es de mala calidad / Tarda muchísimo en servirlo  
+  
+  
 ## Ejercicio 2
 Construye un frase que relacione: abstracción, encapsulación, modularización y jerarquización o en cualquiera de sus derivaciones (abstracto, encapsular, módulo, ...)
-
-### Respuesta
+  
+### Respuesta  
   
 Reducir un elemento a lo esencial, excluir las características de su contenedor, estructurar su contenido en módulos y establecer un orden dependiendo de si es una parte de otro elemento o de si se compone o asocia de otros elementos.
   
@@ -29,12 +29,12 @@ Reducir un elemento a lo esencial, excluir las características de su contenedor
 Explica qué combinaciones de alta/baja cohesión y alto/bajo acoplamiento son posibles en un módulo (pieza, elemento, persona en una organización, ...) a la vez.
 
 ### Respuesta
-Un módulo tiene una alta cohesión cuando guarda una relación con otros muchos módulos, pero si tiene un alto acoplamiento no se puede reutilizar.
-
-Alta cohesión / Alto acoplamiento: Muchas relaciones pero pocas (o sin ninguna) opciones de reutilización.
-Alta cohesión / Bajo acoplamiento: Muchas relaciones y muy reutilizable.
-Baja cohesión / Alto acoplamiento: Pocas relaciones y pocas (o sin ninguna) opciones de reutilización.
-Baja cohesión / Bajo acoplamiento: Pocas relaciones pero muy reutilizable.
+Un módulo tiene una alta cohesión cuando guarda una relación con otros muchos módulos, pero si tiene un alto acoplamiento no se puede reutilizar.  
+  
+Alta cohesión / Alto acoplamiento: Muchas relaciones pero pocas (o sin ninguna) opciones de reutilización.  
+Alta cohesión / Bajo acoplamiento: Muchas relaciones y muy reutilizable.  
+Baja cohesión / Alto acoplamiento: Pocas relaciones y pocas (o sin ninguna) opciones de reutilización.  
+Baja cohesión / Bajo acoplamiento: Pocas relaciones pero muy reutilizable.  
 
   
   
