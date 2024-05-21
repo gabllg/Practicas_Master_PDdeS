@@ -29,7 +29,7 @@ Reducir un elemento a lo esencial, excluir las características de su contenedor
 Explica qué combinaciones de alta/baja cohesión y alto/bajo acoplamiento son posibles en un módulo (pieza, elemento, persona en una organización, ...) a la vez.
 
 ### Respuesta
-Un módulo tiene una alta cohesión cuando guarda una relación con otros muchos módulos, pero si tiene un alto acoplamiento no se puede reutilizar.  
+Un módulo tiene una alta cohesión cuando guarda una relación común con otros muchos módulos, pero si tiene un alto acoplamiento no se puede reutilizar ya que depende de otros módulos.  
   
 Alta cohesión / Alto acoplamiento: Muchas relaciones pero pocas (o sin ninguna) opciones de reutilización.  
 Alta cohesión / Bajo acoplamiento: Muchas relaciones y muy reutilizable.  
