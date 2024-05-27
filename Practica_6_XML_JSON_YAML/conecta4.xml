@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<graph>
+  <node id="start">start</node>
+  <node id="stop">stop</node>
+  <node id="player1">player 1</node>
+  <node id="player2">player 2</node>
+  <node id="connectionYellow">connect</node>
+  <node id="connectionRed">connect</node>
+  <edge>
+    <data>Turn player 1</data>
+    <from idref="start"/>
+    <to idref="player1"/>
+  </edge>
+  <edge>
+    <data>Insert Yellow disk</data>
+    <from idref="player1"/>
+    <to idref="connectionYellow"/>
+  </edge>
+  <edge>
+    <data value="true">Is connect?</data>
+    <from idref="connectionYellow"/>
+    <to idref="stop"/>
+  </edge>
+  <edge>
+    <data value="false">Turn player 2</data>
+    <from idref="connectionYellow"/>
+    <to idref="player2"/>
+  </edge>
+  <edge>
+    <data>Insert Red disk</data>
+    <from idref="player2"/>
+    <to idref="connectionRed"/>
+  </edge>
+  <edge>
+    <data value="true">Is connect?</data>
+    <from idref="connectionRed"/>
+    <to idref="stop"/>
+  </edge>
+  <edge>
+    <data value="false">new turn player 1</data>
+    <from idref="connectionRed"/>
+    <to idref="start"/>
+  </edge>
+</graph>
+<game>
+  <start idref="start">Empty board</start>
+  <turn1>
+    <player idref="player1">Yellow disk
+      <movement/> Position
+    </player>
+  </turn1>
+  <conditionYellow idref="connectionYellow">connection: True/False</condition>
+  <turn2>
+    <player idref="player2">Red disk
+      <movement/> Position
+    </player>
+  </turn2>
+  <conditionRed idref="connectionRed">connection: True/False</condition>
+  <stop idref="stop">Finish</stop>
+</game>

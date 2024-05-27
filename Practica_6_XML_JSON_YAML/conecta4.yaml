@@ -1,0 +1,52 @@
+graph:
+  node: start
+    -id: start
+  node: stop
+    -id: stop
+  node: player1
+    -id: player1
+  node: player2
+    -id: player2
+  node: connectionYellow
+    -id: connectionYellow
+  node: connectionRed
+    -id: connectionRed
+  edge:
+  - data: Turn player 1
+  - from: start
+    to: player1
+  edge:
+  - data: Insert Yellow disk
+  - from: player1
+    to: connectionYellow
+  edge:
+  - data: Is connect?
+  - from: connectionYellow
+    to: stop
+  edge:
+  - data: Turn player 2
+  - from: connectionYellow
+    to: player2
+  edge:
+  - data: Insert Red disk
+  - from: player2
+    to: connectionRed
+  edge:
+  - data: Is connect?
+  - from: connectionRed
+    to: stop
+  edge:
+  - data: Turn player 1
+  - from: connectionRed
+    to: start
+game:
+  -start: Empty board
+  -turn1:
+    -player1: Yellow disk
+    -movement: position
+  -connectionYellow: connection":" True/False
+  -turn2:
+    -player1: Red disk
+    -movement: position
+  -connectionRed: connection":" True/False
+  -stop: Finish

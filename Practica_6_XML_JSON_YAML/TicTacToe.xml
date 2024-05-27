@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Link a la partida: https://github.com/USantaTecla-0-domains/game-ticTacToe/tree/master/0.0.dataLanguages -->
+<board>
+  <Square id="A1"/>
+  <Square id="A2"/>
+  <Square id="A3"/>
+  <Square id="B1"/>
+  <Square id="B2"/>
+  <Square id="B3"/>
+  <Square id="C1"/>
+  <Square id="C2"/>
+  <Square id="C3"/>
+</board>
+<!-- Fichas del jugador 1 -->
+<player id="deckPlayer1">
+  <disk id="X1"/>
+  <disk id="X2"/>
+  <disk id="X3"/>
+</player>
+<!-- Fichas del jugador 2 -->
+<player id="deckPlayer2">
+  <disk id="O1"/>
+  <disk id="O2"/>
+  <disk id="O3"/>
+</player>
+<!-- Tablero vacio: comienza el juego -->
+<start/>
+<turns>
+  <movement idref="X1">
+    <from idref="deckPlayer1"/>
+    <to idref="A1">
+    <checkConnection/>
+  </movement>
+  <movement idref="O1">
+    <from idref="deckPlayer2"/>
+    <to idref="A2">
+    <checkConnection/>
+  </movement>
+  <movement idref="X2">
+    <from idref="deckPlayer1"/>
+    <to idref="B2">
+    <checkConnection/>
+  </movement>
+  <movement idref="O2">
+    <from idref="deckPlayer2"/>
+    <to idref="C3">
+    <checkConnection/>
+  </movement>
+  <movement idref="X3">
+    <from idref="deckPlayer1"/>
+    <to idref="A3">
+    <checkConnection/>
+  </movement>
+  <movement idref="O3">
+    <from idref="deckPlayer2"/>
+    <to idref="C1">
+    <checkConnection/>
+  </movement>
+<!-- Si no Conectan 3, cambian las fichas de lugar -->
+  <movement idref="X1">
+    <from idref="A1"/>
+    <to idref="C2">
+    <checkConnection/>
+  </movement>
+  <movement idref="O2">
+    <from idref="A2"/>
+    <to idref="A1">
+    <checkConnection/>
+  </movement>
+  <movement idref="X3">
+    <from idref="A3"/>
+    <to idref="A2">
+    <checkConnection/>
+  </movement>
+<!-- si checkConnection es True -->
+  <connection>
+    <from idref="deckPlayer1"/>
+    <Square id="A2"/>
+      <disk id="X3"/>
+    </square>
+    <Square id="B2"/>
+      <disk id="X2"/>
+    </square>
+    <Square id="C2"/>
+      <disk id="X1"/>
+    </square>
+  </connection>
+<turns/>
+<stop/>
+<restart/>
+

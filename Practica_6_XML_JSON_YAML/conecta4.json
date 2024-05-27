@@ -1,0 +1,143 @@
+{
+  "graph": {
+      "node": [
+          {
+              "-id": "start",
+              "#text": "start"
+          },
+          {
+              "-id": "stop",
+              "#text": "stop"
+          },
+          {
+              "-id": "player1",
+              "#text": "player 1"
+          },
+          {
+              "-id": "player2",
+              "#text": "player 2"
+          },
+          {
+              "-id": "connectionYellow",
+              "#text": "connect"
+          },
+          {
+              "-id": "connectionRed",
+              "#text": "connect"
+          }
+      ],
+      "edge": [
+          {
+              "data": "Turn player 1",
+              "from": {
+                  "-idref": "start"
+              },
+              "to": {
+                  "-idref": "player1"
+              }
+          },
+          {
+              "data": "Insert Yellow disk",
+              "from": {
+                  "-idref": "player1"
+              },
+              "to": {
+                  "-idref": "connectionYellow"
+              }
+          },
+          {
+              "data": {
+                  "-value": "true",
+                  "#text": "Is connect?"
+              },
+              "from": {
+                  "-idref": "connectionYellow"
+              },
+              "to": {
+                  "-idref": "stop"
+              }
+          },
+          {
+              "data": {
+                  "-value": "false",
+                  "#text": "Turn player 2"
+              },
+              "from": {
+                  "-idref": "connection"
+              },
+              "to": {
+                  "-idref": "player2"
+              }
+          },
+          {
+              "data": "Insert Red disk",
+              "from": {
+                  "-idref": "player2"
+              },
+              "to": {
+                  "-idref": "connectionRed"
+              }
+          },
+          {
+              "data": {
+                  "-value": "true",
+                  "#text": "Is connect?"
+              },
+              "from": {
+                  "-idref": "connectionRed"
+              },
+              "to": {
+                  "-idref": "stop"
+              }
+          },
+          {
+              "data": {
+                  "-value": "false",
+                  "#text": "new turn player 1"
+              },
+              "from": {
+                  "-idref": "connectionRed"
+              },
+              "to": {
+                  "-idref": "start"
+              }
+          }
+      ]
+  },
+  "game":{
+    "start":{
+      "-idref": "start",
+      "text": "Empty board"
+    },
+    "turn1": {
+      "player": {
+        "-idref": "player1",
+        "text": "Yellow Disk",
+        "movement": {
+          "text": "position"
+        }
+      }
+    },
+    "connectionYellow": {
+      "-idref": "connectionYellow",
+      "text": "Connection: True/False"
+    },
+    "turn2": {
+      "player": {
+        "-idref": "player2",
+        "text": "Red Disk",
+        "movement": {
+          "text": "position"
+        }
+      }
+    },
+    "connectionRed": {
+      "-idref": "connectionRed",
+      "text": "Connection: True/False"
+    },
+    "stop":{
+      "-idref": "stop",
+      "text": "Finish"
+    }
+  }
+}
