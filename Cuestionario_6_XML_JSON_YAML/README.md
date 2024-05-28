@@ -60,4 +60,4 @@ En JSON y YAML existen objetos (colecciones heterogéneas de características) y
   
 ### Respuesta  
   
-Tanto en las colecciones heterogéneas como en las homogéneas, en XML los elementos se escriben "<ejemplo>atributo</ejemplo>", o se pueden abreviar en "</ejemplo>" si no tienen ningún atributo o propiedad.
+Tanto en las colecciones heterogéneas como en las homogéneas, en XML los elementos se escriben "<ejemplo>atributo</ejemplo>", o se pueden abreviar en "</ejemplo>" si no tienen ningún atributo o propiedad. De esta forma, la única diferencia es la repetición del nombre en los elementos y subelementos.
