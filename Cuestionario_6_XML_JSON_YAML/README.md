@@ -40,7 +40,7 @@ graph:
 ¿Tendría sentido un documento con estructura de xml cuya información (ubicada entre las etiquetas de abrir y cerrar) respetara a su vez la estructura de json o yaml? Razona la respuesta y, en caso afirmativo, expón un posible escenario.  
   
 ### Respuesta
-No, seriía la misma información escrita de tres formas distintas (con diferentes estructuras).    
+No, sería la misma información escrita de tres formas distintas (con diferentes estructuras).    
 
   
   
