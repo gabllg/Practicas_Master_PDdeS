@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Game: Connect 4</title>
+</head>
+<body>
+  <header>
+    <img class="logo" src="imgs/Connect4_logo_neg_col.png" alt="">
+    <div class="Time">
+      <h2>Time</h2>
+      <p>00:00</p>
+      <div class="Turn">
+        <h2>Turn</h2>
+        <div class="turn_red"><!-- circulo rojo --></div>
+        <div class="turn_yellow"><!-- circulo amarillo --></div>
+      </div>
+ </header>
+ <nav>
+   <div class="Player">
+     <img src="" alt="">
+     <p>Name</p>
+   </div>
+   <div class="Player">
+     <img src="" alt="">
+     <p>Name</p>
+   </div>
+   <ul class="menu">
+    <li><button id="restart"></button></li>
+    <li><button id="pause"></button></li>
+    <li><button id="settings"></button></li>
+  </ul>
+ </nav>
+ <main>
+   <section class="Board">
+     <div class="Y">
+       <article class="Gap">
+         <label for="Y6_X1"></label>
+         <input type="checkbox" value="Y6_X1" name="Y6_X1">
+       </article>
+       <article class="Gap">
+         <label for="Y6_X2"></label>
+         <input type="checkbox" value="Y6_X2" name="Y6_X2">
+       </article>
+       <article class="Gap">
+         <label for="Y6_X3"></label>
+         <input type="checkbox" value="Y6_X3" name="Y6_X3">
+       </article>
+       <article class="Gap">
+         <label for="Y6_X4"></label>
+         <input type="checkbox" value="Y6_X4" name="Y6_X4">
+       </article>
+       <article class="Gap">
+         <label for="Y6_X5"></label>
+         <input type="checkbox" value="Y6_X5" name="Y6_X5">
+       </article>
+       <article class="Gap">
+         <label for="Y6_X6"></label>
+         <input type="checkbox" value="Y6_X6" name="Y6_X6">
+       </article>
+       <article class="Gap">
+         <label for="Y6_X7"></label>
+         <input type="checkbox" value="Y6_X7" name="Y6_X7">
+       </article> 
+     </div>
+     <div class="Y">
+       <article class="Gap">
+         <label for="Y5_X1"></label>
+         <input type="checkbox" value="Y5_X1" name="Y5_X1">
+       </article>
+       <article class="Gap">
+         <label for="Y5_X2"></label>
+         <input type="checkbox" value="Y5_X2" name="Y5_X2">
+       </article>
+       <article class="Gap">
+         <label for="Y5_X3"></label>
+         <input type="checkbox" value="Y5_X3" name="Y5_X3">
+       </article>
+       <article class="Gap">
+         <label for="Y5_X4"></label>
+         <input type="checkbox" value="Y5_X4" name="Y5_X4">
+       </article>
+       <article class="Gap">
+         <label for="Y5_X5"></label>
+         <input type="checkbox" value="Y5_X5" name="Y5_X5">
+       </article>
+       <article class="Gap">
+         <label for="Y5_X6"></label>
+         <input type="checkbox" value="Y5_X6" name="Y5_X6">
+       </article>  
+       <article class="Gap">
+         <label for="Y5_X7"></label>
+         <input type="checkbox" value="Y5_X7" name="Y5_X7">
+       </article>
+     </div>
+     <div class="Y">
+       <article class="Gap">
+         <label for="Y4_X1"></label>
+         <input type="checkbox" value="Y4_X1" name="Y4_X1">
+       </article>
+       <article class="Gap">
+         <label for="Y4_X2"></label>
+         <input type="checkbox" value="Y4_X2" name="Y4_X2">
+       </article>
+       <article class="Gap">
+         <label for="Y4_X3"></label>
+         <input type="checkbox" value="Y4_X3" name="Y4_X3">
+       </article>
+       <article class="Gap">
+         <label for="Y4_X4"></label>
+         <input type="checkbox" value="Y4_X4" name="Y4_X4">
+       </article>
+       <article class="Gap">
+         <label for="Y4_X5"></label>
+         <input type="checkbox" value="Y4_X5" name="Y4_X5">
+       </article>
+       <article class="Gap">
+         <label for="Y4_X6"></label>
+         <input type="checkbox" value="Y4_X6" name="Y4_X6">
+       </article>  
+       <article class="Gap">
+         <label for="Y4_X7"></label>
+         <input type="checkbox" value="Y4_X7" name="Y4_X7">
+       </article>
+     </div>
+     <div class="Y">
+       <article class="Gap">
+         <label for="Y3_X1"></label>
+         <input type="checkbox" value="Y3_X1" name="Y3_X1">
+       </article>
+       <article class="Gap">
+         <label for="Y3_X2"></label>
+         <input type="checkbox" value="Y3_X2" name="Y3_X2">
+       </article>
+       <article class="Gap">
+         <label for="Y3_X3"></label>
+         <input type="checkbox" value="Y3_X3" name="Y3_X3">
+       </article>
+       <article class="Gap">
+         <label for="Y3_X4"></label>
+         <input type="checkbox" value="Y3_X4" name="Y3_X4">
+       </article>
+       <article class="Gap">
+         <label for="Y3_X5"></label>
+         <input type="checkbox" value="Y3_X5" name="Y3_X5">
+       </article>
+       <article class="Gap">
+         <label for="Y3_X6"></label>
+         <input type="checkbox" value="Y3_X6" name="Y3_X6">
+       </article>  
+       <article class="Gap">
+         <label for="Y3_X7"></label>
+         <input type="checkbox" value="Y3_X7" name="Y3_X7">
+       </article>
+     </div>
+     <div class="Y">
+       <article class="Gap">
+         <label for="Y2_X1"></label>
+         <input type="checkbox" value="Y2_X1" name="Y2_X1">
+       </article>
+       <article class="Gap">
+         <label for="Y2_X2"></label>
+         <input type="checkbox" value="Y2_X2" name="Y2_X2">
+       </article>
+       <article class="Gap">
+         <label for="Y2_X3"></label>
+         <input type="checkbox" value="Y2_X3" name="Y2_X3">
+       </article>
+       <article class="Gap">
+         <label for="Y2_X4"></label>
+         <input type="checkbox" value="Y2_X4" name="Y2_X4">
+       </article>
+       <article class="Gap">
+         <label for="Y2_X5"></label>
+         <input type="checkbox" value="Y2_X5" name="Y2_X5">
+       </article>
+       <article class="Gap">
+         <label for="Y2_X6"></label>
+         <input type="checkbox" value="Y2_X6" name="Y2_X6">
+       </article>  
+       <article class="Gap">
+         <label for="Y2_X7"></label>
+         <input type="checkbox" value="Y2_X7" name="Y2_X7">
+       </article>
+     </div>
+     <div class="Y">
+       <article class="Gap">
+         <label for="Y1_X1"></label>
+         <input type="checkbox" value="Y1_X1" name="Y1_X1">
+       </article>
+       <article class="Gap">
+         <label for="Y1_X2"></label>
+         <input type="checkbox" value="Y1_X2" name="Y1_X2">
+       </article>
+       <article class="Gap">
+         <label for="Y1_X3"></label>
+         <input type="checkbox" value="Y1_X3" name="Y1_X3">
+       </article>
+       <article class="Gap">
+         <label for="Y1_X4"></label>
+         <input type="checkbox" value="Y1_X4" name="Y1_X4">
+       </article>
+       <article class="Gap">
+         <label for="Y1_X5"></label>
+         <input type="checkbox" value="Y1_X5" name="Y1_X5">
+       </article>
+       <article class="Gap">
+         <label for="Y1_X6"></label>
+         <input type="checkbox" value="Y1_X6" name="Y1_X6">
+       </article>  
+       <article class="Gap">
+         <label for="Y1_X7"></label>
+         <input type="checkbox" value="Y1_X7" name="Y1_X7">
+       </article>
+     </div>
+   </section>
+ </main>
+</body>
+</html>
