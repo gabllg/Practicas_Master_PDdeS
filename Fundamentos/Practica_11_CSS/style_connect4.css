@@ -1,0 +1,171 @@
+html{
+  background-color: #222222;
+}
+body{
+  width:1920px;
+  height:1080px;
+  background-color:#333333;
+  display:flex;
+  flex-wrap: wrap;
+}
+/* Aquí empiezan los estilos de HEADER */
+header{
+  width:1920px;
+  height:200px;
+  background-color: #006278;
+}
+header img{
+  width:auto;
+  height:150px;
+  margin:25px;
+  float:left;
+}
+.Time{
+  display:block;
+  width:auto;
+  height:200px;
+  float:right;
+}
+.Time h2, .Turn h2{
+  display:block;
+  width:auto;
+  height:100px;
+  margin: 50px 20px 50px 20px;
+  float:left;
+  font-family: "Nunito", serif;
+  font-weight:100;
+  color:#FFFFFF;
+  font-size:80px;
+  line-height:100px;
+}
+.Time p{
+  display:block;
+  width:auto;
+  height:100px;
+  margin: 50px 20px 50px 20px;
+  float:left;
+  font-family: "Nunito", serif;
+  font-weight:100;
+  color:#38e600;
+  font-size:80px;
+  line-height:100px;
+}
+.Turn{
+  display:block;
+  width:auto;
+  height:200px;
+  float:right;
+}
+.turn_red{
+  width:100px;
+  height:100px;
+  margin: 50px 20px 50px 20px;
+  background-color: #ff0037;
+  border-radius:100%;
+  float:left;
+}
+.turn_yellow{
+  width:100px;
+  height:100px;
+  margin: 50px 20px 50px 20px;
+  background-color: #ffb700;
+  border-radius:100%;
+  float:left;
+}
+/* Aquí empiezan los estilos de NAV */
+nav{
+  width:356px;
+  height:880px;
+  background-color: #004757;
+}
+.Player_profile img{
+  width:204px;
+  height:204px;
+  margin:50px 76px 10px 76px;
+}
+.Player_profile p{
+  display:block;
+  width:356px;
+  height:88px;
+  margin:0px;
+  font-family: "Nunito", serif;
+  font-weight:300;
+  color:#FFFFFF;
+  font-size:50px;
+  text-align: center;
+}
+#player_1 p{
+  color:#ff0037;
+}
+#player_2 p{
+  color:#ffb700;
+}
+.Menu{
+  width:264px;
+  height:88px;
+  margin:44px 46px 44px 46px;
+  padding:0px;
+  list-style-type:none;
+}
+.Menu li{
+  width:88px;
+  height:88px;
+  display:block;
+  float:left;
+}
+.Menu button{
+  width:68px;
+  height:68px;
+  margin:10px;
+  background-color: #ffffff00;
+  border:none;
+}
+#Restart{
+  background:url(imgs/Connect4_icon_restart.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+#Pause{
+  background:url(imgs/Connect4_icon_pause.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+#Settings{
+  background:url(imgs/Connect4_icon_settings.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+/* Aquí empiezan los estilos de MAIN */
+main{
+  width:1564px;
+  height:880px;
+}
+.Board{
+  width:840px;
+  height:720px;
+  margin:80px 362px 80px 362px;
+  display:block;
+  float:left;
+}
+.Y{
+  width:840px;
+  height:120px;
+}
+.Gap{
+  width:120px;
+  height:120px;
+  background-color: #00323d;
+  display:block;
+  float:left;
+}
+.Gap input[type="checkbox"]{
+  appearance: none;
+  width:110px;
+  height:110px;
+  margin:5px;
+  background-color: #333333;
+  border-radius: 100%;
+}
