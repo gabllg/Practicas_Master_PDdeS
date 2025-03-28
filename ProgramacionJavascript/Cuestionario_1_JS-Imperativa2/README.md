@@ -66,7 +66,7 @@ Solo veo un orden posible:
 Primero 5 * 6, *(nivel 15 de precedencia)* = 30  
 Después, dos operadores "+" *(nivel 14 de precedencia)* tienen una asociatividad left-to-right,  
 por lo tanto:   
-12 + 34 + 30 = 77
+12 + 34 + 30 = 76
   
     
 ## Ejercicio 5  
@@ -75,7 +75,7 @@ Determina todos los posibles órdenes de evaluación de la siguiente expresión 
 
 ### Respuesta  
   
-Los operadores "&&" lógicos tienen un nivel de precedencia mayor *(7)* que los lógicos "||" *(6)*;  
-Comprobando las reglas de Coerción,  
-la expresión se reduciría a: *false || false || false*, por lo tanto:
-false || false || false = false
+Los operadores "&&" lógicos tienen un nivel de precedencia mayor *(7)* que los lógicos "||" *(6)*;    
+Comprobando las reglas de Coerción,    
+la expresión se reduciría a: *false || false || false*, por lo tanto:  
+false || false || false = false  
