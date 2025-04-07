@@ -17,6 +17,8 @@ const y = true;
 const z = true;  
 console.writeln(x===y===z);  
 ""  
+
+// Corregido: no contemplé otras opciones más allá de encontrar una solución, centrándome en un caso particular. Por ejemplo: *valor distinto* === *valor distinto* === false
     
   
 ## Ejercicio 2
@@ -24,7 +26,7 @@ console.writeln(x===y===z);
   
 ### Respuesta  
   
-También True;  si en el ejemplo anterior eran del mismo tipo y valor, en este ejemplo seguiran siendo del mismo tipo. Ejemplo:  
+También True;  si en el ejemplo anterior eran del mismo tipo y valor, en este ejemplo seguiran siendo del mismo *valor.* Ejemplo:  // Corregido: confundí la relación de igualdad de "==".
   
 ""  
 const x = true;  
@@ -59,6 +61,7 @@ False < True *(z)* = **True**
 
 
 Determina todos los posibles órdenes de evaluación de la siguiente expresión "12+34+5*6"  
+// Corregido: La fórmula es distinta porque en la página web de la escuela interpreta los * como en los archivos .md, y aparecen en cursiva. Copio los enunciados desde la web hasta este .md para resolverlos y no trajo los símbolos *. La expresión planteada es **"1 * 2 + 3 * 4 + 5 * 6"**
   
 ### Respuesta
 
